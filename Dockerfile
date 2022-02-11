@@ -15,4 +15,4 @@ RUN apt-get update \
 EXPOSE 8080 8443 3333
 
 WORKDIR /xmr-node-proxy
-CMD ./update.sh && node proxy.js
+CMD ./update.sh && node proxy.js --workers=2
